@@ -7,6 +7,7 @@ Every level gets progressivly harder and harder. Almost every level brings somet
 Only 1 script in the entire project is from the Internet and that is the CameraScale.cs file because UI scaling is not working in any other way,
 but that is the only script that is not completly done by someone else.
 
+
 [Controls](#Controls)
 
 [Screenshots](#Screenshots)
