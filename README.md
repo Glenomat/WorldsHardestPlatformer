@@ -8,9 +8,26 @@ Only 1 script in the entire project is from the Internet and that is the CameraS
 but that is the only script that is not completly done by someone else.
 
 
+[Installation](#Installation)
+
 [Controls](#Controls)
 
 [Screenshots](#Screenshots)
+
+# Installation
+
+**Windows:**
+1. Unpack the .zip file
+2. Execute "The World's Hardest Platformer.exe"
+3. Enjoy the game (And dont rage) 
+
+**Mac:**
+1. Unpack the .zip file 
+2. Put the WorldsHardestPlatformer.app file in Finder -> Applications
+3. Open the Terminal and use the following lines **cd /Applcations** and after that **chmod -R 755 WorldsHardestPlatformer.app**
+4. Execute the programm (You shouldn't be able to run it)
+5. Go to Systemsettings -> Security -> General and click on "Open Anyways" for WorldsHardestPlatformer.app
+6. Execute the Programm and it should work!
 
 # Controls
 • Use A/D to move Left/Right
