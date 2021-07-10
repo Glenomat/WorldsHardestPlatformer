@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 849467372223263117}
   - component: {fileID: 849467372223263118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LaserMachism
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849467372223263119}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.248893, y: 4.4350023, z: -34.549004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -46,9 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70615f9c5d5ddb646bcae2c28b14213d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 3
-  levelY: 1
-  levelX: 0
+  useOnOffTime: 1
+  onTime: 1
+  offTime: 0.4
+  levelY: 0
+  levelX: 1
 --- !u!1 &849467372724841004
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +62,7 @@ GameObject:
   - component: {fileID: 849467372724841003}
   - component: {fileID: 849467372724841002}
   - component: {fileID: 849467372724841001}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Diode1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +77,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849467372724841004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: 0.027, z: 37.636364}
+  m_LocalPosition: {x: -1.02, y: 4.15, z: 37.636364}
   m_LocalScale: {x: 0.5543, y: 0.20901273, z: 1}
   m_Children: []
   m_Father: {fileID: 849467372223263117}
@@ -169,7 +171,7 @@ GameObject:
   - component: {fileID: 849467373673615764}
   - component: {fileID: 849467373673615763}
   - component: {fileID: 849467373673615762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Diode2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -184,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849467373673615765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.222, y: 0.018, z: 37.636364}
+  m_LocalPosition: {x: -1.25, y: -2.43, z: 37.636364}
   m_LocalScale: {x: 0.5543, y: 0.20901273, z: 1}
   m_Children: []
   m_Father: {fileID: 849467372223263117}
@@ -278,7 +280,7 @@ GameObject:
   - component: {fileID: 849467374084976740}
   - component: {fileID: 849467374084976739}
   - component: {fileID: 849467374084976738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Laser
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -293,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849467374084976741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.095, y: 0.026, z: 37.636364}
+  m_LocalPosition: {x: -1.14, y: 0.44, z: 37.636364}
   m_LocalScale: {x: 2.1143124, y: 0.13094427, z: 1}
   m_Children: []
   m_Father: {fileID: 849467372223263117}

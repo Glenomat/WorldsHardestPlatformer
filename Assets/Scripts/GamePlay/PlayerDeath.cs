@@ -17,8 +17,14 @@ public class PlayerDeath : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenue")
+        if (SceneManager.GetActiveScene().buildIndex == 1)
             deaths = 0;
+        else if (SceneManager.GetActiveScene().name == "MainMenue") return;
+        else if (SceneManager.GetActiveScene().name == "FinalScreen")
+        {
+            scoreScreen.deathTxt.text = "And you did it with " + deaths + (deaths == 1 ? " Death" : " Deaths");
+            return;
+        }
         spriteRender = GetComponent<SpriteRenderer>();
         playerMvmt = GetComponent<PlayerMovement_2D>();
         boxCollider = GetComponent<BoxCollider2D>();

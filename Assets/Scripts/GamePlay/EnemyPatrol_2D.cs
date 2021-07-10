@@ -27,15 +27,17 @@ public class EnemyPatrol_2D : MonoBehaviour
         castPos.transform.position = new Vector2(transform.position.x + boxCollider.bounds.extents.x, transform.position.y - (boxCollider.bounds.extents.y - 0.1f));
         disCastPos = Vector2.Distance(castPos.transform.position, new Vector2(transform.position.x + boxCollider.bounds.extents.x, transform.position.y - boxCollider.bounds.extents.y));
 
-
         RaycastHit2D groundCast = Physics2D.Raycast(boxCollider.bounds.center, Vector2.down, boxCollider.bounds.extents.y + 1f, layerMask);
         groundBoxCollider = groundCast.transform.gameObject.GetComponent<BoxCollider2D>();
 
         transform.position = new Vector2(transform.position.x, ((groundCast.transform.position.y + groundBoxCollider.bounds.extents.y) + boxCollider.bounds.extents.y) + 0.01f);
         //transform.position = new Vector2(transform.position.x, transform.position.y - (groundCast.distance - groundBoxCollider.bounds.extents.y));
 
+        
         if (!forceDir)
             dir = Random.Range(0, 2);
+        else
+            transform.eulerAngles = dir == 0 ? new Vector3(0, -180, 0) : new Vector3(0, 0, 0);
     }
 
     void Update()
@@ -45,6 +47,7 @@ public class EnemyPatrol_2D : MonoBehaviour
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);
 
+        //Checks if Enemy is above an Edge or at an Wall
         if (!castVerti.collider || castHori)
         {
             if (dir == 0)

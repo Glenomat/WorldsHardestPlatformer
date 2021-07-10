@@ -6206,6 +6206,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: levelX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: levelY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
       propertyPath: onTime
       value: 0.25
       objectReference: {fileID: 0}
@@ -6224,6 +6232,18 @@ PrefabInstance:
     - target: {fileID: 849467372724841003, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372724841003, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467373673615764, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467373673615764, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
@@ -7582,12 +7602,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: levelX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: levelY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372223263118, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
       propertyPath: useOnOffTime
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 849467372223263119, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
       propertyPath: m_Name
       value: LaserMachism
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372724841003, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467372724841003, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467373673615764, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 849467373673615764, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa5d4d536717daf40bbf4ddb45b5c4af, type: 3}

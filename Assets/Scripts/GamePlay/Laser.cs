@@ -22,6 +22,9 @@ public class Laser : MonoBehaviour
         diode2 = transform.GetChild(1).gameObject;
         laser = transform.GetChild(2).gameObject;
 
+        diode2.transform.localScale = diode1.transform.localScale;
+
+        //Levels X and Y positions
         if (levelX)
             diode2.transform.position = new Vector2(diode1.transform.position.x, diode2.transform.position.y);
         if (levelY)
@@ -54,6 +57,7 @@ public class Laser : MonoBehaviour
 
     IEnumerator LaserSwitch()
     {
+        //Changes Laser state
         laser.SetActive(on);
         on = !on;
 

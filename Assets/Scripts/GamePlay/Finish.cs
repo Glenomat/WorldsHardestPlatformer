@@ -14,11 +14,13 @@ public class Finish : MonoBehaviour
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
-
+        //Gets all tokens on Field
         tokens = GameObject.FindGameObjectsWithTag("Token").ToList<GameObject>();
+        //Checks for token count to set Finish active or not
         if (tokens.Count > 0)
             isActive = false;
         
+        //Changes color based on activeness
         if(!isActive)
             spriteRender.color = new Color(0, 52f / 255, 53f / 255);
         else
@@ -27,6 +29,7 @@ public class Finish : MonoBehaviour
 
     void Update()
     {
+        //Checks token count and changes Finish state
         if (tokens.Count == 0)
         {
             isActive = true;
@@ -36,6 +39,7 @@ public class Finish : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        //When collision with Finish player gets moved one Scene
         if (other.CompareTag("Player") && isActive)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

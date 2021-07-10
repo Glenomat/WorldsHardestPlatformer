@@ -19,7 +19,8 @@ public class Turret : MonoBehaviour
     void Start()
     {
         prefabSprite = prefab.GetComponent<SpriteRenderer>();
-        //Set Spawnpoint and Body
+
+        //Get Spawnpoint, Body and List of Body Parts
         for (int i = 0; i < transform.childCount; i++)
         {
             if (transform.GetChild(i).CompareTag("CanonSpawn"))
@@ -31,19 +32,25 @@ public class Turret : MonoBehaviour
         }
         turretRender.Add(body.GetComponent<SpriteRenderer>());
 
+        //Check if bullet should turn invisible
         if (turnInvisible)
         {
             for (int i = 0; i < turretRender.Count; i++)
+                //Make Turret Light Purple
                 turretRender[i].color = new Color(131f / 255, 86f / 255, 159f / 255);
+            //Change Bullet Color to Orange
             prefabSprite.color = new Color(1, 117f / 255, 0);
         }
         else
         {
             for (int i = 0; i < turretRender.Count; i++)
+                //Make Turret Purple
                 turretRender[i].color = new Color(157f / 255, 0f / 255, 255f / 255);
+            //Make Bullet Red
             prefabSprite.color = new Color(1, 0, 0);
         }
 
+        //Check where Spawnpoint is Relative to Body and set dir
         if (spawnPoint.transform.position.x < body.transform.position.x)
             dir = 1;
         else
@@ -54,7 +61,10 @@ public class Turret : MonoBehaviour
     IEnumerator SpawnWait()
     {
         yield return new WaitForSeconds(spawnIntervall);
+        //Spawn Bullet at Spawnpoin
         GameObject bullet = Instantiate(prefab, spawnPoint.transform.position, Quaternion.identity, transform);
+
+        //Get Bullet Code and set Speed, time before Invisibility and if bullet turns invisible
         Bullet bulletCode = bullet.GetComponent<Bullet>();
         bulletCode.speed = bulletSpeed;
         bulletCode.waitForInvisible = invisible;
