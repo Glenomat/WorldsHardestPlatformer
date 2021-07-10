@@ -42,7 +42,8 @@ but that is the only script that is not completly done by someone else.
 
 # Screenshots
 
-At the Moment there are 15 Levels but to make it takes a lot of time and a lot of patience.
+At the Moment there are 20 Levels but to make it takes a lot of time and a lot of patience.
+Can you bet my Game?
 
 ![MainMenue](https://user-images.githubusercontent.com/69582151/125073875-e24b6f00-e0bc-11eb-9668-c0d93a816549.png)
 
