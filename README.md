@@ -1,7 +1,7 @@
 # The World's Hardest Platformer
 
-An Platform inspired by The World's Hardest Game.
-The complete game is made in Unity and thats the first project that I'm making with this Game Engine.
+An Platformer inspired by The World's Hardest Game.
+The complete game is made in Unity and that's the first project that I'm making with this Game Engine.
 Every level gets progressivly harder and harder. Almost every level brings something new to the mix.
 
 Only 1 script in the entire project is from the Internet and that is the CameraScale.cs file because UI scaling is not working in any other way,
@@ -43,7 +43,7 @@ but that is the only script that is not completly done by someone else.
 # Screenshots
 
 At the Moment there are 20 Levels but to make it takes a lot of time and a lot of patience.
-Can you bet my Game?
+Can you beat my Game?
 
 ![MainMenue](https://user-images.githubusercontent.com/69582151/125073875-e24b6f00-e0bc-11eb-9668-c0d93a816549.png)
 
